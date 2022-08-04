@@ -1,0 +1,25 @@
+.single__task-new {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.single__task-new:hover {
+  color: var(--color-textTasks);
+}
+
+.single__task-text {
+  color: var(--color-textTasks);
+  font-weight: 600;
+}
+
+.single__task-icon-del {
+  height: 2.4rem;
+  width: 2.4rem;
+  transition: all 0.5s;
+}
+
+.single__task-icon-del:hover {
+  color: var(--color-purple);
+}

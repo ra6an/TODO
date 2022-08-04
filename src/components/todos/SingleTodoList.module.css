@@ -1,0 +1,99 @@
+.single__todo-list {
+  background-color: var(--color-white);
+  margin-top: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  padding: 3rem 1rem 5rem 1rem;
+  z-index: 10;
+  animation: slideDown 0.2s ease;
+}
+
+/* .single__todo-list li {
+  width: 100%;
+  color: var(--color-textTasks);
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task__icon-checkbox {
+  width: 10%;
+  color: var(--color-purple);
+  transition: all 0.5s;
+}
+
+.task__icon-checkbox:hover {
+  color: var(--color-purpleHover);
+  transform: scale(1.1);
+}
+
+.task__icon-del-edit {
+  width: 10%;
+  color: var(--color-purple);
+  transition: all 0.5s;
+}
+
+.task__icon-del-edit:hover {
+  color: var(--color-purpleHover);
+  transform: scale(1.1);
+}
+
+.task-text {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+} */
+
+.single__todo-textarea {
+  overflow: auto;
+  height: 5rem;
+  padding: 0.5rem 1rem;
+  width: 90%;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-textTasks);
+  resize: none;
+  border: 0.2rem solid var(--color-textTasks);
+  border-radius: 0.6rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  transition: all 0.5s;
+}
+
+.single__todo-textarea::placeholder {
+  font-weight: 500;
+  color: var(--color-textTasks);
+}
+
+.single__todo-textarea:focus {
+  outline: none;
+  border: 0.2rem solid var(--color-purple);
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-60%);
+  }
+  60% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

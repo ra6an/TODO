@@ -1,0 +1,92 @@
+.single__todo-form {
+  margin-top: 1rem;
+  padding: 2rem 2rem;
+  border: 0.2rem solid var(--color-purple);
+  border-radius: 1rem;
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 2;
+  animation: slideDown 0.2s ease;
+}
+
+.single__todo-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.single__todo-textarea {
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-textTasks);
+  resize: none;
+  border: 0.2rem solid var(--color-textTasks);
+  border-radius: 0.6rem;
+  transition: all 0.5s;
+}
+
+.single__todo-textarea::placeholder {
+  font-weight: 500;
+  color: var(--color-textTasks);
+}
+
+.single__todo-textarea:focus {
+  outline: none;
+  border: 0.2rem solid var(--color-purple);
+}
+
+.single__task-btn-cancel {
+  border: 0.2rem solid var(--color-textTasks);
+  background-color: var(--color-textTasks);
+  color: var(--color-white);
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+  border-radius: 5rem;
+  transition: all 0.5s;
+}
+
+.single__task-btn-cancel:hover {
+  background-color: var(--color-textTasksHover);
+  box-shadow: 0.15rem 0.15rem 0.5rem 0.05rem #d3cfcf;
+}
+
+.single__task-btn-add-task {
+  border: 0.2rem solid var(--color-purple);
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+  border-radius: 5rem;
+  transition: all 0.5s;
+}
+
+.single__task-btn-add-task:hover {
+  background-color: var(--color-purpleHover);
+  box-shadow: 0.15rem 0.15rem 0.5rem 0.05rem #d3cfcf;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

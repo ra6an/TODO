@@ -1,0 +1,31 @@
+.error-container {
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: var(--color-errorBackground); */
+  background-color: var(--color-purpleError);
+  /* border: 0.2rem solid var(--color-errorBackground); */
+  /* border-radius: 20rem; */
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  animation: show 0.5s ease-in-out;
+}
+
+.error-text {
+  font-size: 2rem;
+  /* color: var(--color-errorBackground); */
+  color: var(--color-white);
+  letter-spacing: 0.1rem;
+}
+
+@keyframes show {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,22 @@
+.single__todo-container {
+  position: relative;
+}
+
+.single__todo-btn {
+  width: 20rem;
+  background-color: var(--color-purple);
+  color: var(--color-textHeader);
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  border: 0.4rem solid var(--color-background);
+  border-radius: 5rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
+.single__todo-btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-purpleHover);
+}

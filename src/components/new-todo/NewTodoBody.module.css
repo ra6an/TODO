@@ -1,0 +1,12 @@
+.new__todo-body {
+  margin-top: 2rem;
+  padding: 2rem 4rem 0rem 4rem;
+  width: 100%;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}

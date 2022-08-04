@@ -1,0 +1,82 @@
+.todo {
+  margin: 10rem auto 10rem auto;
+  width: 130rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  flex-direction: column;
+  /* background-color: var(--color-background); */
+}
+
+.todo-container {
+  width: 100%;
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  justify-content: center;
+  column-gap: 10rem;
+  row-gap: 15rem;
+  /* border-bottom: 0.2rem dotted var(--color-purple); */
+}
+
+.todo-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 40rem;
+}
+
+.todo-btn-new-todo {
+  width: 25rem;
+  background-color: var(--color-purple);
+  font-size: 2rem;
+  color: var(--color-white);
+  font-weight: 600;
+  border: none;
+  padding: 2rem 5rem;
+  letter-spacing: 0.1rem;
+  border-radius: 10rem;
+  border: 0.2rem solid var(--color-purple);
+  cursor: pointer;
+  transition: all 0.5s;
+  animation: show 0.5s ease;
+}
+
+.todo-btn-new-todo:hover {
+  background-color: var(--color-purpleHover);
+}
+
+.todo-btn-cancel {
+  width: 25rem;
+  background-color: var(--color-background);
+  border: 0.2rem solid var(--color-purple);
+  border-radius: 20rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-purple);
+  padding: 2rem 5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  animation: show 0.5s ease;
+}
+
+.todo-btn-cancel:hover {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+}
+.separator {
+  width: 90%;
+  height: 0.2rem;
+  margin: 5rem 0;
+  /* background-color: var(--color-purple); */
+  border-bottom: 0.2rem dotted var(--color-purple);
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

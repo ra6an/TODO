@@ -1,0 +1,66 @@
+.new__todo-new-task-form {
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.new__todo-new-task-input {
+  width: 100%;
+  height: 5rem;
+  resize: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-textTasks);
+  border: 0.2rem solid var(--color-textTasks);
+  border-radius: 0.6rem;
+  padding: 0.5rem 1rem;
+}
+
+.new__todo-new-task-input:focus {
+  outline: none;
+  border-color: var(--color-purple);
+}
+
+.new__todo-new-task-input::placeholder {
+  color: var(--color-textTasksCompleted);
+}
+
+.new__todo-add-task-btn {
+  background-color: var(--color-purple);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.4rem solid var(--color-background);
+  border-radius: 10rem;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.new__todo-add-task-btn:hover {
+  background-color: var(--color-purpleHover);
+}
+
+.new__todo-icon-add {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--color-white);
+}
+
+.new__todo-add-text {
+  width: 20rem;
+  color: var(--color-white);
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  /* padding: 0 1rem; */
+}

@@ -1,0 +1,17 @@
+.todo__form-container {
+  /* background-color: var(--color-purple); */
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: show 0.5s ease;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
